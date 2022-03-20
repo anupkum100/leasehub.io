@@ -34,13 +34,22 @@ h4 {
     color: #2c0548;
 }
 
+small {
+    font-size: .8rem;
+}
+
 .general-info.row * {
     width: auto !important;
 }
 
 header {
     z-index: 999;
-    background: linear-gradient(45deg, transparent, #222);
+}
+
+header .menu {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 
 footer {
@@ -96,7 +105,7 @@ footer {
 
 .page-bg h1 {
     color: white;
-    font-size: 90px;
+    font-size: 5rem;
     text-transform: uppercase;
 }
 
@@ -125,13 +134,14 @@ footer {
     background-image: url(../Images/UAE\ Fla.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    min-height: 300px;
 }
 
 .onestop .text-container {
     top: 100px;
     right: 0;
     width: 60%;
-    padding: 50px 50px 200px 50px !important;
+    padding: 2% 0% 10% 3% !important;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
 }
@@ -165,7 +175,7 @@ footer {
 
 .boxes-coming-soon {
     background-image: url(../Illustrations/Dubai\ city\ vector.png);
-    height: 250px;
+    height: 300px;
     background-repeat: no-repeat;
     background-position: right;
     border-bottom: 10px solid #cfcfcf;
@@ -181,7 +191,7 @@ footer {
 
 .fleet {
     background-image: url(../Images/Fleet-management.png);
-    height: 250px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -247,7 +257,7 @@ footer {
 
     .page-banner,
     .onestop {
-        min-height: 800px;
+        min-height: 650px;
     }
 
     .services,

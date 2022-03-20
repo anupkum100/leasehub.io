@@ -23,11 +23,12 @@
                 LH
             </p>
             <div class="menu-section">
-                <a href="#"><span>Home</span></a>
-                <a href="#"><span>About</span></a>
-                <a href="#"><span>Services</span></a>
-                <a href="#"><span>Clients</span></a>
-                <a href="#"><span>Contact</span></a>
+                <a onclick="closeNav()" href="#"><span>Home</span></a>
+                <a onclick="closeNav()" href="#aboutus"><span>About Us</span></a>
+                <a onclick="closeNav()" href="#services"><span>Our Services</span></a>
+                <a onclick="closeNav()" href="#accessories"><span>Accessories</span></a>
+                <a onclick="closeNav()" href="#products"><span>Products</span></a>
+                <a onclick="closeNav()" href="#contactus"><span>Contact Us</span></a>
             </div>
         </div>
 
@@ -35,8 +36,8 @@
 
     <header class="position-fixed p-3 w-100">
         <div class="d-flex justify-content-between">
-            <img height="30" src="./Images/LH logo.png" />
-            <div>
+            <img height="50" src="./Images/LH logo.png" />
+            <div class="menu d-flex align-items-center bg-app-dark">
                 <img onclick="openNav()" class="mx-3" height="20" src="./Icons/Menu Icon.png">
             </div>
         </div>
@@ -52,7 +53,7 @@
         <img class="bike-2" src="./Images/Pulsar Img_Banner.png" />
     </section>
 
-    <section class="about-us p-3 row m-0">
+    <section id="aboutus" class="about-us p-3 row m-0">
         <div class="col-lg-6 text-center d-flex align-items-center">
             <img class="w-75 m-auto shadow" src="./Images/About Us_Dubai image.png" />
         </div>
@@ -111,7 +112,7 @@
     </section>
 
     <section class="page-bg p-3 row m-0 text-white">
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center d-flex align-items-center">
             <h1 class="very-big">The best after sales care</h1>
         </div>
         <div class="col-lg-6">
@@ -123,7 +124,7 @@
         </div>
     </section>
 
-    <section class="trust d-none d-xl-block p-3">
+    <section class="trust d-none d-lg-block p-3">
         <h1 class="text-warning text-center very-big">Trust</h1>
         <div>
             <h2 class="text-warning big">the experts</h2>
@@ -135,7 +136,7 @@
     </section>
 
     <!-- Trus section for mobile device  -->
-    <section class="trust-mobile d-block d-sm-none p-3">
+    <section class="trust-mobile d-block d-lg-none p-3">
         <h1 class="text-warning">Trust</h1>
         <h2 class="text-warning">the experts</h2>
         <div class="bg-app-light-opacity p-2">
@@ -147,7 +148,7 @@
     </section>
 
     <section class="onestop p-3 position-relative d-flex align-items-center">
-        <div class="text-container bg-light p-3 position-absolute d-none d-xl-block">
+        <div class="text-container bg-light p-3 position-absolute d-none d-lg-block">
             <h1 class="text-dark mx-5">
                 <span class="border-warning">
                     One Stop Shop Experience
@@ -160,22 +161,22 @@
             </p>
             <img class="position-absolute" width="90%" src="./Images/One stop shop exp.png" alt="bike">
         </div>
-        <div class="bg-app-light-opacity p-3 w-70 m-auto shadow d-block d-sm-none">
+        <div class="bg-app-light-opacity p-3 w-70 m-auto shadow d-block d-lg-none">
             <h1 class="text-dark mx-2">
                 <span class="border-warning">
                     One Stop Shop Experience
                 </span>
             </h1>
-            <p class="w-100">
+            <p class="w-100 my-3">
                 <small>We make it easy to find and choose the bike that best suits your requirements. All you need to do
                     is tell us more about the requirements of your ride and we'll show you some great options.
                 </small>
             </p>
-            <img class="m-auto d-flex w-75" src="./Images/One stop shop exp.png" alt="bike">
+            <img class="m-auto d-flex w-50" src="./Images/One stop shop exp.png" alt="bike">
         </div>
     </section>
 
-    <section class="services p-3">
+    <section id="services" class="services p-3">
         <h1><span class="border-warning">Our Services</span></h1>
         <p class="my-3">Lease Hub provides the best quality bikes, customer service, and rental and repair services. Find all your
             rental needs without any hassles at Lease Hub.</p>
@@ -232,7 +233,7 @@
         </div>
     </section>
 
-    <section class="accessories p-3 px-5">
+    <section id="accessories" class="accessories p-3 px-5">
         <h1><span class="border-warning text-white">Accessories</span></h1>
         <h2 class="text-white my-3">Track your Bike</h2>
 
@@ -255,7 +256,7 @@
     <section class="fleet">
     </section>
 
-    <section class="products position-relative bg-app-dark p-3">
+    <section id="products" class="products position-relative bg-app-dark p-3">
         <h1><span class="border-warning text-white">Products</span></h1>
         <p class="text-white my-2 w-75 my-3">We have a wide range of two-wheelers on offer - from entry-level options to more
             high-end
@@ -316,7 +317,7 @@
         </div>
     </section>
 
-    <div class="contactus p-3 m-auto">
+    <div id="contactus" class="contactus p-3 m-auto">
         <h1><span class="border-warning">Contact Us</span></h1>
         <p class="m-2 my-3">Plot No 365 0126 <br />
             Al Quoz Industrial 2 <br />
