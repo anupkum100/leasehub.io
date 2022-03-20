@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'dubai-medium';
+    src: url('./fonts/Dubai-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'dubai-bold';
+    src: url('./fonts/Dubai-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'dubai-light';
+    src: url('./fonts/Dubai-Light.ttf');
+}
+
+@font-face {
+    font-family: 'dubai-regular';
+    src: url('./fonts/Dubai-Regular.ttf');
+}
+
+body {
+    font-family: 'dubai-regular' !important;
+}
+
+h1 {
+    font-family: 'dubai-bold' !important;
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #2c0548;
+}
+
+.general-info.row * {
+    width: auto !important;
+}
+
+header {
+    z-index: 999;
+    background: linear-gradient(45deg, transparent, #222);
+}
+
+footer {
+    justify-content: space-between;
+}
+
+.bg-app-light-opacity {
+    background: rgb(255, 255, 255, .8);
+    z-index: 9;
+}
+
+.bg-app-dark-opacity {
+    background: rgb(0, 0, 0, .8);
+    z-index: 9;
+}
+
+.bg-app-dark {
+    background-color: #2c0548;
+}
+
+.page-banner {
+    background-image: url(../Images/Banner-img\ 1.png);
+    background-size: 100% 100%;
+    min-height: 400px;
+}
+
+.page-banner img {
+    width: 30%;
+}
+
+.page-banner .bike-1 {
+    position: absolute;
+    bottom: 35px;
+    right: 20%;
+}
+
+.page-banner .bike-2 {
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+}
+
+.page-banner h3 {
+    position: absolute;
+    top: 135px;
+    right: 140px;
+}
+
+.page-bg {
+    background-image: url(../Back_ground/Purple\ BG.png);
+    background-size: 100% 100%;
+}
+
+.page-bg h1 {
+    color: white;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+.trust,
+.trust-mobile {
+    background-image: url(../Images/Character_Trust\ the\ experts.png);
+    /* height: 600px; */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.trust div {
+    padding-left: 200px;
+}
+
+.trust .very-big {
+    font-size: 200px;
+}
+
+.trust .big {
+    font-size: 130px;
+}
+
+.onestop {
+    background-image: url(../Images/UAE\ Fla.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.onestop .text-container {
+    top: 100px;
+    right: 0;
+    width: 60%;
+    padding: 50px 50px 200px 50px !important;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.accessories {
+    background-image: url(../Images/Accessories.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mobile {
+    height: 90%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.location1 {
+    height: 10%;
+    position: absolute;
+    left: 19%;
+    top: 55%;
+}
+
+.location2 {
+    height: 20%;
+    position: absolute;
+    left: 60%;
+    bottom: 10%;
+}
+
+.boxes-coming-soon {
+    background-image: url(../Illustrations/Dubai\ city\ vector.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-bottom: 10px solid #cfcfcf;
+    background-size: 70% 100%;
+}
+
+.boxes-coming-soon img {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.fleet {
+    background-image: url(../Images/Fleet-management.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.products .botton-buttons {
+    height: 50px;
+    left: 0;
+    bottom: 0;
+}
+
+.products .botton-buttons div {
+    background-color: rgb(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.products .botton-buttons .active {
+    color: #000 !important;
+    font-weight: bold;
+    background: #ff9501 !important;
+}
+
+.text-warning {
+    color: #ff9501 !important;
+}
+
+.bg-warning {
+    background-color: #ff9501 !important;
+}
+
+.border-warning {
+    border-bottom: 2px solid #ff9501 !important;
+}
+
+
+@media (min-width: 1040px) {
+    .page-bg {
+        max-height: 300px
+    }
+
+    .page-bg div p {
+        width: 50%;
+    }
+
+    .page-bg div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .products {
+        height: 800px;
+        padding: 50px 100px;
+    }
+
+    .products .product-img {
+        width: 50% !important;
+    }
+
+    section {
+        height: 600px;
+    }
+
+    .page-banner,
+    .onestop {
+        min-height: 800px;
+    }
+
+    .services,
+    .accessories,
+    .products,
+    .contactus {
+        padding: 50px 100px !important;
+        margin-bottom: 50px;
+    }
+
+    .service-card {
+        min-height: 450px;
+        height: 450px;
+    }
+
+    .accessories {
+        height: 600px;
+        position: relative;
+    }
+
+    .accessories .text-container {
+        position: absolute;
+        right: 388px;
+        top: 45%;
+        width: 25%;
+    }
+
+    .boxes-coming-soon,
+    .fleet {
+        height: 600px;
+    }
+
+    .general-info {
+        max-height: 150px;
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+}
+
+/* overlay menu CSS */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content .big-font {
+    position: relative;
+    font-size: 50vh;
+    font-family: 'Times New Roman';
+}
+
+.overlay-content .big-font span {
+    opacity: .3;
+}
+
+.overlay-content .big-font span:first-child {
+    position: absolute;
+    top: -50%;
+}
+
+.overlay-content .big-font span:last-child {
+    position: absolute;
+    bottom: -50%;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ff9501;
+}
+
+.overlay a:hover span {
+    border-left: 2px solid #ff9501;
+    padding-left: 10px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    z-index: 9;
+}
+
+.overlay .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .overlay .menu-section {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 990px) {
+    .overlay .menu-section {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .page-banner h3 {
+        font-size: 14px;
+        text-align: right;
+        right: 20px;
+    }
+
+    .page-banner .bike-2 {
+        bottom: 20px;
+        right: 10px;
+    }
+}
