@@ -20,11 +20,16 @@
 
 body {
     font-family: 'dubai-regular' !important;
+    overflow-x: hidden;
 }
 
 h1 {
     font-family: 'dubai-bold' !important;
     margin-bottom: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 h1,
@@ -43,7 +48,7 @@ small {
 }
 
 header {
-    z-index: 999;
+    z-index: 998;
 }
 
 header .menu {
@@ -54,6 +59,14 @@ header .menu {
 
 footer {
     justify-content: space-between;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover, footer a:focus {
+    color: #ff9501;
 }
 
 .bg-app-light-opacity {
@@ -304,11 +317,11 @@ footer {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     overflow: hidden;
     transition: 0.5s;
+    z-index: 999;
 }
 
 .overlay-content {
@@ -406,3 +419,31 @@ footer {
         right: 10px;
     }
 }
+
+/* animation CSS starts here  */
+.reveal {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealRight {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealRight.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* animation CSS ends here  */
