@@ -300,6 +300,7 @@ footer a:hover, footer a:focus {
 
     .boxes-coming-soon,
     .fleet {
+        padding-left: 100px !important;
         height: 600px;
     }
 
@@ -309,6 +310,10 @@ footer a:hover, footer a:focus {
 
     footer {
         justify-content: flex-start;
+    }
+
+    footer .menu-links {
+        flex-direction: row;
     }
 }
 
@@ -418,6 +423,22 @@ footer a:hover, footer a:focus {
         bottom: 20px;
         right: 10px;
     }
+
+    footer .menu-links {
+        flex-direction: column;
+    }
+
+    .revealRight {
+        position: relative;
+        opacity: 0;
+        transition: 1s all ease;
+        transform: none !important;
+    }
+
+    .revealRight.active {
+        transform: none !important;
+        opacity: 1;
+    }
 }
 
 /* animation CSS starts here  */
@@ -436,13 +457,12 @@ footer a:hover, footer a:focus {
 }
 
 .revealRight.active {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
-
 .reveal.active {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
